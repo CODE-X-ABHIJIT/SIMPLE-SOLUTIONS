@@ -210,6 +210,11 @@ a {
   .hero-text {
     padding-right: 0;
   }
+  .hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 }
 
 /* Services Section */
