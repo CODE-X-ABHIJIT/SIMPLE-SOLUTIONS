@@ -8,15 +8,18 @@
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   height: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #f0f2f5;
   color: #333;
 }
 
 /* Typography */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #1e2a38;
 }
 
@@ -26,6 +29,10 @@ a {
   transition: color 0.3s ease;
 }
 
+i {
+  font-family:'Times New Roman', Times, serif;
+}
+
 /* Navbar */
 .navbar {
   background: rgba(232, 237, 239, 0.95);
@@ -33,7 +40,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 40px;
+  padding: 5px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -53,8 +60,10 @@ a {
 
 .navbar .logo img {
   height: 70px;
+  width: 200px;
   object-fit: contain;
   display: block;
+  border-radius: 15%;
 }
 
 .navbar .logo:hover {
@@ -84,7 +93,7 @@ a {
   display: none;
   cursor: pointer;
   font-size: 28px;
-  color:#000;
+  color: #000;
 }
 
 /* Responsive Navbar */
@@ -97,17 +106,17 @@ a {
   .menu-icon {
     display: block;
     position: absolute;
-    top: 22px;
+    top: 15px;
     right: 30px;
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
-    gap: 15px;
+    gap: 7px;
     width: 100%;
     background: #1e2a38;
-    padding: 15px 30px;
+    padding: 10px 20px;
     position: absolute;
     top: 65px;
     left: 0;
@@ -116,6 +125,16 @@ a {
 
   .nav-links.active {
     display: flex;
+  }
+  .navbar .logo img {
+    height: 40px;
+    width: 150px;
+    object-fit: contain;
+    display: block;
+    border-radius: 15%;
+  }
+  .menu-icon {
+    font-size: 20px;
   }
 }
 
@@ -202,7 +221,8 @@ a {
     padding: 40px 20px;
   }
 
-  .hero-text, .hero-image {
+  .hero-text,
+  .hero-image {
     flex: 0 0 100%;
     padding: 20px 0;
   }
@@ -211,10 +231,10 @@ a {
     padding-right: 0;
   }
   .hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
 }
 
 /* Services Section */
@@ -245,7 +265,7 @@ a {
 }
 
 .service-list li::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0%;
   height: 3px;
@@ -265,7 +285,12 @@ a {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: rgba(0, 0, 0, 0.3); /* Darken the background for text visibility */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Darken the background for text visibility */
   padding: 5px 10px;
   border-radius: 5px;
   color: #fff;
@@ -277,7 +302,6 @@ a {
 .service-list li:hover .service-name {
   opacity: 1; /* Show the name on hover */
 }
-
 
 /* Responsive Service Section */
 @media (max-width: 1024px) {
@@ -318,7 +342,6 @@ a {
   }
 }
 
-
 /* Projects Section */
 
 .project-list {
@@ -348,7 +371,7 @@ a {
 }
 
 .project-list li::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0%;
   height: 3px;
@@ -368,7 +391,12 @@ a {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: rgba(0, 0, 0, 0.3); /* Darken the background for text visibility */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Darken the background for text visibility */
   padding: 5px 10px;
   border-radius: 5px;
   color: #fff;
@@ -380,7 +408,6 @@ a {
 .project-list li:hover .project-name {
   opacity: 1; /* Show the name on hover */
 }
-
 
 /* Responsive Service Section */
 @media (max-width: 1024px) {
@@ -420,7 +447,6 @@ a {
     left: 5px; /* Adjust text position */
   }
 }
-
 
 .projects-grid {
   display: flex;
@@ -489,48 +515,140 @@ a {
 }
 
 /* Contact / Get in Touch */
+/* === Get in Touch & Contact Form Styling === */
 #contact-form {
-  max-width: 600px;
-  margin: auto;
+  max-width: 700px; /* wider for desktop */
+  margin: 40px auto;
   background: #fff;
   padding: 40px;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
   animation: fadeIn 1s ease-in;
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 90%;
+  box-sizing: border-box;
 }
 
-input, textarea {
-  padding: 12px;
+#contact-form input,
+#contact-form textarea {
+  padding: 14px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  font-size: 1rem;
   transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-input:focus, textarea:focus {
+#contact-form input:focus,
+#contact-form textarea:focus {
   border-color: #00d4ff;
   outline: none;
 }
 
-button {
-  padding: 12px;
+#contact-form button {
+  padding: 14px;
   border: none;
   background: #1e2a38;
   color: white;
   font-weight: bold;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 1rem;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
+#contact-form button:hover {
   background: #00d4ff;
   color: #000;
   transform: scale(1.02);
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Contact Us Section Styling === */
+.contact-container {
+  display: flex;
+  flex-wrap: nowrap; /* Side-by-side layout on laptops */
+  gap: 40px;
+  max-width: 1200px;
+  margin: 10px 10px 0 0;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 30px;
+}
+
+
+.contact-details {
+  flex: 1 1 400px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  line-height: 1.6;
+}
+
+.contact-details p {
+  margin: 1px 0;
+}
+
+.map iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .contact-details,
+  #contact-form {
+    flex: 1 1 100%;
+  }
+
+  #contact-form {
+    margin-top: 20px;
+  }
+
+  .map iframe {
+    height: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  #contact-form {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    font-size: 0.95rem;
+  }
+
+  #contact-form button {
+    font-size: 0.95rem;
+  }
+}
+
 
 /* Footer */
 footer {
@@ -554,11 +672,22 @@ footer .social-icons a:hover {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.02); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
 }

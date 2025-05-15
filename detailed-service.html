@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Service Details - Simple Solutions</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+  .service-detail-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .service-image {
+    width: 50%;
+    padding-right: 20px;
+  }
+
+  .service-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-info {
+    width: 50%;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  .service-info h2 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .service-info ul {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .service-info ul li {
+    margin-bottom: 14px;
+    padding-left: 28px;
+    position: relative;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  .service-info ul li::before {
+    content: "✔";
+    color: #2ecc71;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .service-detail-container {
+      flex-direction: column;
+    }
+
+    .service-image,
+    .service-info {
+      width: 100%;
+      padding: 0;
+    }
+
+    .service-info {
+      margin-top: 30px;
+    }
+  }
+</style>
+
+
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="section">
+    <div class="service-detail-container">
+      <div class="service-image">
+        <img id="service-image" src="" alt="Service Image" />
+      </div>
+      <div class="service-info">
+        <h2 id="service-title"></h2>
+        <ul id="service-points"></ul>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/include.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/service-detail.js"></script>
+</body>
+</html>

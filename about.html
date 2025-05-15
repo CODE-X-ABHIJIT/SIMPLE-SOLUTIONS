@@ -5,6 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us - Simple Solutions</title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    h3 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      color: #34495e;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.7;
+    }
+
+    ul {
+      text-align: left;
+      padding-left: 20px;
+      font-size: 1.05em;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .clients-counter {
+      margin-top: 40px;
+      background-color: #eaf2f8;
+      padding: 30px;
+      border-radius: 10px;
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #2e86c1;
+    }
+
+    .counter {
+      color: #d35400;
+    }
+
+    .testimonials {
+      margin-top: 60px;
+    }
+
+    .testimonial-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .testimonial {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 300px;
+      flex: 1 1 250px;
+      text-align: left;
+    }
+
+    .testimonial p {
+      font-style: italic;
+      color: #555;
+    }
+
+    .testimonial strong {
+      display: block;
+      margin-top: 10px;
+      color: #2c3e50;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .testimonial-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -12,26 +110,47 @@
   <div id="header-placeholder"></div>
 
   <section class="section">
-    <h2>About Simple Solutions</h2>
-    <p>Simple Solutions is a leading provider of high-quality modular kitchens and custom furniture, offering smart, space-saving solutions for modern homes and businesses. With a focus on functionality, style, and durability, we turn your spaces into elegant, efficient environments.</p>
+    <h2>About Us</h2>
+    <p>
+      With over <strong>24 years of experience</strong>, Simple Solutions has become a household name in designing and delivering customized modular kitchens and furniture solutions. We pride ourselves on transforming everyday spaces into inspiring environments by combining modern aesthetics, quality materials, and impeccable service.
+    </p>
 
-    <ul style="max-width: 700px; margin: auto; text-align: left;">
-    <h3>Why Choose Us?</h3>
-      <li><strong>Expert Craftsmanship:</strong> Precision-built kitchens and furniture tailored to your space.</li>
-      <li><strong>Modern Designs:</strong> A wide range of styles including acrylic, glass, steel etc.</li>
-      <li><strong>Client Satisfaction:</strong> Over 10,000+ happy clients across India and beyond.</li>
-      <li><strong>End-to-End Service:</strong> From design consultation to installation - we handle it all.</li>
-    </ul>
+    <div style="margin-top: 40px;">
+      <h3>Why Choose Us?</h3>
+      <ul>
+        <li><strong>Expert Craftsmanship:</strong> Precision-built kitchens and furniture tailored to your space.</li>
+        <li><strong>Modern Designs:</strong> Specializing in Lacard Glass Kitchens, Acrylic, Stainless Steel & Glass finishes.</li>
+        <li><strong>Client Satisfaction:</strong> Over <strong>8,000+ satisfied clients</strong> across India.</li>
+        <li><strong>End-to-End Service:</strong> From design consultation to seamless installation - we handle it all.</li>
+        <li><strong>Trusted by Hospitality:</strong> We collaborate with hotels, restaurants, and villa projects.</li>
+      </ul>
+    </div>
 
-    <!-- Clients Counter -->
-    <div class="clients-counter" style="margin-top: 30px;">
+    <div style="margin-top: 40px;">
+      <h3>Our Esteemed Partners</h3>
+      <ul>
+        <li><strong>Makwana & Spacewood:</strong> Associate furniture and modular unit partners.</li>
+        <li><strong>Kaff Appliances:</strong> Trusted appliance integration for all modular kitchen solutions.</li>
+        <li><strong>Carysil:</strong> Our premium sink and faucet partner.</li>
+        <li><strong>Hettich & Kesseböhmer:</strong> World-class fittings and hardware for smart functionality.</li>
+      </ul>
+    </div>
+
+    <div class="clients-counter">
       <h3>Trusted by <span class="counter">10,000+</span> Clients</h3>
     </div>
 
-    <!-- Testimonials -->
-    <div class="testimonials" style="margin-top: 40px;">
+    <div class="testimonials">
       <h3>What Our Clients Say</h3>
       <div class="testimonial-list">
+        <div class="testimonial">
+          <p>"Simple Solutions transformed our simple kitchen into a modular kitchen. Truly professional!"</p>
+          <strong>- Ayesha Patel</strong>
+        </div>
+        <div class="testimonial">
+          <p>"Their team was incredibly responsive and delivered beyond our expectations."</p>
+          <strong>- Amisha Das</strong>
+        </div>
         <div class="testimonial">
           <p>"Our kitchen was beautifully transformed — stylish, practical, and on time!"</p>
           <strong>- Sneha R., Bhubaneswar</strong>
